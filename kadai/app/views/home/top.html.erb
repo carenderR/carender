@@ -1,0 +1,50 @@
+
+<h1>
+  ２０１６年（平成２８年）カレンダー
+  </h1>
+  
+     <% for a in 1..12do%>
+<% a.to_s%>
+
+  
+  <table class="box">
+    <tr>
+      <th>
+        <%=a%>月
+      </th>
+    </tr>
+    <tr class="day_of_the_week">
+    　<th >Mon</th>
+    　<th>Tue</th>
+    　<th>Wed</th>
+    　<th>Thu</th>
+    　<th>Fri</th>
+    　<th class="sat">Sat</th>
+    　<th class="sun">Sun</th>    </tr>
+    <tr>
+     <% for i in 1..7 do %>
+   <th><%= i %></th>
+   <% end%>
+    </tr>
+    <tr>
+    <% for i in 8..14 do %>
+   <th><%= i %></th>
+   <% end%>
+    </tr>
+    <tr>
+    <% for i in 15..21 do %>
+   <th><%= i %></th>
+   <% end%>
+    </tr>
+    <tr>
+    <% for i in 22..28 do %>
+   <th><%= i %></th>
+   <% end%>
+    </tr>
+    <tr>
+    <% for i in 29..31 do %>
+   <th><%= i %></th>
+   <% end%>
+    </tr>
+  </table>
+  <%end%>
